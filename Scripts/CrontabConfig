@@ -1,0 +1,6 @@
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+Crontab Config - 8 to 8 mode
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+
+0 20 * * * /usr/bin/python3 /home/pi/Desktop/FrogFiles/Scripts/temp2.py
+0 20 * * * /usr/bin/python3 /home/pi/Desktop/FrogFiles/Scripts/audio.py
