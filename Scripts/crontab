@@ -1,6 +1,7 @@
-¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
- Crontab Config - 8 to 8 mode
- ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+# The 0 signifies that it starts at the 0th minute and the 20 states 
+# that it will start at the 20th hour which 8 pm.
+# First entry is the Temperature script
+# Second entry is the Audio script
 
  0 20 * * * /usr/bin/python3 /home/pi/Desktop/FrogFiles/Scripts/temp2.py
  0 20 * * * /usr/bin/python3 /home/pi/Desktop/FrogFiles/Scripts/audio.py
