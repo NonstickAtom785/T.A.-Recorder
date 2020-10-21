@@ -1,22 +1,22 @@
+from datetime import date
 import pyaudio
-import wave
+import wave 
 import datetime
 import os
-from datetime import date
 
 today = date.today()
 time = datetime.datetime.now()
 dir = '/home/pi/Desktop/FrogFiles/Audio/' + str(today)
-form_1 = pyaudio.paInt16 # 16-bit resolution
+form_1 = pyaudio.paInt32 # 32-bit resolution
 chans = 1 # 1 channel
 samp_rate = 44100 # 44.1kHz sampling rate
 chunk = 4096 # 2^12 samples for buffer
-record_secs = 28800 # seconds to record (default for 12 hours is 43200 seconds)
+record_secs = 5 # seconds to record (default for 12 hours is 43200 seconds)
 dev_index = 2 # device index found by p.get_device_info_by_index(ii)
 CHECK_FOLDER = os.path.isdir(dir)
 if not CHECK_FOLDER:
     os.mkdir(dir)
-wav_output_filename = dir + '/' + str(today) + '.wav' # name of .wav file
+wav_output_filename = dir + '/' + str(time) + '.wav' # name of .wav file
 audio = pyaudio.PyAudio() # create pyaudio instantiation
 
 
